@@ -23,14 +23,14 @@ repository               : "academicpages/academicpages.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "profile.jpg"
   name             : "eastwit"
   pronouns         : # example: "she/her"  
   bio              : "Robotics"
   location         : "Earth"
   employer         : "UESTC"
   uri              : # URL
-  email            : "none@example.org" 
+  email            : "3271302032@qq.com" 
 
   # Academic websites
   academia         : # URL
