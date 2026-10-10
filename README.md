@@ -1,4 +1,4 @@
-# eastwit · 个人主页
+# 贾东睿（Dongrui Jia）· 个人主页
 
 > 🌐 访问我的主页：**https://eastwit.github.io**
 
@@ -31,4 +31,4 @@
 
 ---
 
-© eastwit · built with code and a lot of coffee
+© 贾东睿 · Dongrui Jia · built with code and a lot of coffee
