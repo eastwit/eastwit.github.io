@@ -189,8 +189,8 @@ nav{position:fixed;top:0;left:0;right:0;z-index:50;background:rgba(10,14,19,.88)
       <div class="hero-tags reveal">
         <span class="tagline">robotics</span>
         <span class="tagline">computer vision</span>
-        <span class="tagline">full-stack</span>
-        <span class="tagline">open source</span>
+        <span class="tagline">deep learning</span>
+        <span class="tagline">VLA</span>
       </div>
       <div class="cta-row reveal">
         <a class="btn btn-primary" href="#research">
@@ -248,28 +248,28 @@ nav{position:fixed;top:0;left:0;right:0;z-index:50;background:rgba(10,14,19,.88)
     <p class="lede reveal">对以下方向保持长期关注与实践，欢迎交流与合作。</p>
     <div class="research-grid">
       <div class="research reveal">
-        <div class="idx"><i>R.1</i> robotics</div>
-        <h3>机器人学与运动控制</h3>
-        <p>机械臂 / 移动机器人的建模、路径规划与运动控制，关注从仿真到实机的部署闭环。占位——补充你的研究介绍。</p>
-        <div class="pills"><span class="pill">motion planning</span><span class="pill">ROS</span></div>
+        <div class="idx"><i>R.1</i> embodied ai</div>
+        <h3>具身智能与视觉语言动作</h3>
+        <p>探索视觉、语言与动作决策的融合——在 CoreVLA 项目中实现基于 Qwen 与 openpi 的 VLA 核心结构，用 MoT 并联双 Transformer，把 VLM 与 FlowMatching 结合。</p>
+        <div class="pills"><span class="pill">VLA</span><span class="pill">FlowMatching</span><span class="pill">multimodal</span></div>
       </div>
       <div class="research reveal">
-        <div class="idx"><i>R.2</i> perception</div>
-        <h3>SLAM 与感知</h3>
-        <p>传感器融合、定位建图与环境感知，探索机器在未知环境中自定位与导航的可能。占位——补充你的研究介绍。</p>
-        <div class="pills"><span class="pill">SLAM</span><span class="pill">sensor fusion</span></div>
+        <div class="idx"><i>R.2</i> vision</div>
+        <h3>计算机视觉与目标检测</h3>
+        <p>从传统特征到深度学习的演进：YOLO 系列实时检测、人脸与表情识别，以及 SIFT / GLOH 特征匹配等经典方法。</p>
+        <div class="pills"><span class="pill">YOLOv8</span><span class="pill">detection</span></div>
       </div>
       <div class="research reveal">
-        <div class="idx"><i>R.3</i> vision</div>
-        <h3>计算机视觉</h3>
-        <p>目标检测、图像理解与三维视觉，用视觉让机器"看懂"世界。占位——补充你的研究介绍。</p>
-        <div class="pills"><span class="pill">detection</span><span class="pill">3D vision</span></div>
+        <div class="idx"><i>R.3</i> medical</div>
+        <h3>医学图像分析</h3>
+        <p>面向医学影像的分割与诊断辅助——脑肿瘤图像分割、视网膜血管分割，对比 UNet / UNet++ / DYnet++ 等方法并落地可复现实验。</p>
+        <div class="pills"><span class="pill">segmentation</span><span class="pill">UNet</span></div>
       </div>
       <div class="research reveal">
-        <div class="idx"><i>R.4</i> learning</div>
-        <h3>机器学习与强化学习</h3>
-        <p>数据驱动的决策与学习算法，关注其在机器人任务中的实际效果。占位——补充你的研究介绍。</p>
-        <div class="pills"><span class="pill">RL</span><span class="pill">deep learning</span></div>
+        <div class="idx"><i>R.4</i> deep learning</div>
+        <h3>深度学习模型实现</h3>
+        <p>从零实现经典架构，深入理解注意力机制、位置编码与表示学习，构建可靠的模型基础。</p>
+        <div class="pills"><span class="pill">Transformer</span><span class="pill">PyTorch</span></div>
       </div>
     </div>
   </div>
@@ -283,32 +283,46 @@ nav{position:fixed;top:0;left:0;right:0;z-index:50;background:rgba(10,14,19,.88)
     <p class="lede reveal">从想法到可运行系统的完整落地实践。</p>
     <div class="eng-grid">
       <article class="eng reveal">
-        <span class="tag">web app</span>
-        <h3>任务协作面板</h3>
-        <p>轻量任务看板，支持拖拽、标签与实时协作。占位——替换为你的真实项目。</p>
-        <div class="chips"><span class="chip">Vue</span><span class="chip">TypeScript</span><span class="chip">Node.js</span></div>
-        <div class="links"><a href="#" data-demo="演示中，等待补充链接">GitHub <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7"/><path d="M7 7h10v10"/></svg></a></div>
+        <span class="tag">computer vision</span>
+        <h3>FaceMood · 实时表情识别</h3>
+        <p>基于 YOLOv8 人脸检测 + MiniXception 表情识别的实时系统，支持 7 种表情分类，通过 Edge TTS 自动播报语音反馈，实现自然的人机情感交互。</p>
+        <div class="chips"><span class="chip">YOLOv8</span><span class="chip">Xception</span><span class="chip">Edge TTS</span></div>
+        <div class="links"><a href="https://github.com/eastwit/FaceMood" target="_blank" rel="noopener">GitHub <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7"/><path d="M7 7h10v10"/></svg></a></div>
       </article>
       <article class="eng reveal">
-        <span class="tag">robotics</span>
-        <h3>自主导航系统</h3>
-        <p>基于激光雷达的移动机器人室内自主导航，含建图与路径规划。占位——替换为你的真实项目。</p>
-        <div class="chips"><span class="chip">ROS</span><span class="chip">C++</span><span class="chip">SLAM</span></div>
-        <div class="links"><a href="#" data-demo="演示中，等待补充链接">GitHub <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7"/><path d="M7 7h10v10"/></svg></a></div>
+        <span class="tag">embodied ai</span>
+        <h3>CoreVLA · 视觉语言动作</h3>
+        <p>基于 Qwen 与 openpi 的 VLA 核心实现，通过 MoT 并联两个 Transformer，把 VLM 与 FlowMatching 结合，融合文本、双视角图像、位姿与动作输出统一结果。</p>
+        <div class="chips"><span class="chip">PyTorch</span><span class="chip">VLA</span><span class="chip">FlowMatching</span></div>
+        <div class="links"><a href="https://github.com/eastwit/corevla" target="_blank" rel="noopener">GitHub <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7"/><path d="M7 7h10v10"/></svg></a></div>
       </article>
       <article class="eng reveal">
-        <span class="tag">tooling</span>
-        <h3>视觉检测工具</h3>
-        <p>面向工业场景的目标检测与缺陷识别工具链。占位——替换为你的真实项目。</p>
-        <div class="chips"><span class="chip">Python</span><span class="chip">PyTorch</span></div>
-        <div class="links"><a href="#" data-demo="演示中，等待补充链接">GitHub <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7"/><path d="M7 7h10v10"/></svg></a></div>
+        <span class="tag">medical imaging</span>
+        <h3>DYnet++ · 血管分割</h3>
+        <p>基于 DRIVE 数据集的视网膜血管分割，包含 DYnet++ / UNet / UNet++ 三种结构，提供完整训练与测试流程。</p>
+        <div class="chips"><span class="chip">PyTorch</span><span class="chip">UNet</span><span class="chip">medical</span></div>
+        <div class="links"><a href="https://github.com/eastwit/DYnetPlusPlus" target="_blank" rel="noopener">GitHub <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7"/><path d="M7 7h10v10"/></svg></a></div>
       </article>
       <article class="eng reveal">
-        <span class="tag">data</span>
-        <h3>数据可视化仪表盘</h3>
-        <p>将复杂数据转化为直观图表，帮助业务快速洞察。占位——替换为你的真实项目。</p>
-        <div class="chips"><span class="chip">React</span><span class="chip">ECharts</span></div>
-        <div class="links"><a href="#" data-demo="演示中，等待补充链接">GitHub <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7"/><path d="M7 7h10v10"/></svg></a></div>
+        <span class="tag">computer vision</span>
+        <h3>机器视觉 · 分割与拼接</h3>
+        <p>机器视觉课程作业：脑肿瘤图像分割（OTSU / K-means / Level Set / Watershed 四种方法对比 + IoU 指标），以及 SIFT / GLOH 图像拼接融合。</p>
+        <div class="chips"><span class="chip">OpenCV</span><span class="chip">scikit-image</span><span class="chip">SIFT</span></div>
+        <div class="links"><a href="https://github.com/eastwit/Machine-Vision-Lesson-Homework" target="_blank" rel="noopener">GitHub <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7"/><path d="M7 7h10v10"/></svg></a></div>
+      </article>
+      <article class="eng reveal">
+        <span class="tag">deep learning</span>
+        <h3>Transformer · 从零实现</h3>
+        <p>使用 PyTorch 从零实现 Transformer 架构——编码器、解码器、多头注意力、前馈网络、层归一化与位置编码，深入理解每一步原理。</p>
+        <div class="chips"><span class="chip">PyTorch</span><span class="chip">Attention</span></div>
+        <div class="links"><a href="https://github.com/eastwit/transformer-from-scratch" target="_blank" rel="noopener">GitHub <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7"/><path d="M7 7h10v10"/></svg></a></div>
+      </article>
+      <article class="eng reveal">
+        <span class="tag">in progress</span>
+        <h3>更多在路上</h3>
+        <p>这里将展示你的下一个作品——继续把想法变成能跑、能用的系统。</p>
+        <div class="chips"><span class="chip">TODO</span><span class="chip">属于你</span></div>
+        <div class="links"><a href="https://github.com/eastwit?tab=repositories" target="_blank" rel="noopener">更多仓库 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7"/><path d="M7 7h10v10"/></svg></a></div>
       </article>
     </div>
   </div>
@@ -321,28 +335,28 @@ nav{position:fixed;top:0;left:0;right:0;z-index:50;background:rgba(10,14,19,.88)
     <h2 class="reveal">笔记</h2>
     <p class="lede reveal">技术研究与学习过程中的沉淀。点击可阅读全文。</p>
     <div class="notes">
-      <a class="note reveal" href="#" data-demo="笔记正文待补充">
-        <span class="date">2026-09</span>
-        <div><h3>SLAM 入门：从特征点到因子图</h3><p>一篇关于视觉 SLAM 核心思想的整理。占位摘要——替换为你的真实笔记。</p>
-        <div class="meta"><span class="chip">robotics</span><span class="chip">SLAM</span></div></div>
+      <a class="note reveal" href="https://github.com/eastwit/transformer-from-scratch" target="_blank" rel="noopener">
+        <span class="date">2026-04</span>
+        <div><h3>Transformer 从零实现：注意力机制详解</h3><p>用 PyTorch 逐层实现编码器、解码器与多头注意力，理清位置编码与表示学习。正文待补充。</p>
+        <div class="meta"><span class="chip">deep learning</span><span class="chip">Transformer</span></div></div>
         <span class="go">read →</span>
       </a>
-      <a class="note reveal" href="#" data-demo="笔记正文待补充">
-        <span class="date">2026-06</span>
-        <div><h3>机器人运动学速查</h3><p>正逆运动学、雅可比与工作空间的简明推导。占位摘要——替换为你的真实笔记。</p>
-        <div class="meta"><span class="chip">robotics</span><span class="chip">kinematics</span></div></div>
+      <a class="note reveal" href="https://github.com/eastwit/Machine-Vision-Lesson-Homework" target="_blank" rel="noopener">
+        <span class="date">2026-04</span>
+        <div><h3>机器视觉作业复盘：分割与特征匹配</h3><p>脑肿瘤分割四方法对比、SIFT / GLOH 拼接融合的实验记录与心得。正文待补充。</p>
+        <div class="meta"><span class="chip">computer vision</span><span class="chip">segmentation</span></div></div>
         <span class="go">read →</span>
       </a>
-      <a class="note reveal" href="#" data-demo="笔记正文待补充">
-        <span class="date">2025-12</span>
-        <div><h3>强化学习中的策略梯度</h3><p>从策略梯度到 PPO 的推导与直觉。占位摘要——替换为你的真实笔记。</p>
-        <div class="meta"><span class="chip">RL</span><span class="chip">math</span></div></div>
+      <a class="note reveal" href="https://github.com/eastwit/DYnetPlusPlus" target="_blank" rel="noopener">
+        <span class="date">2026-05</span>
+        <div><h3>血管分割方法对比：UNet 系列</h3><p>在 DRIVE 数据集上对比 UNet / UNet++ / DYnet++ 的训练与评估记录。正文待补充。</p>
+        <div class="meta"><span class="chip">medical</span><span class="chip">UNet</span></div></div>
         <span class="go">read →</span>
       </a>
-      <a class="note reveal" href="#" data-demo="笔记正文待补充">
-        <span class="date">2025-08</span>
-        <div><h3>把全栈项目部署到云端的清单</h3><p>一次完整部署踩坑记录与可复用清单。占位摘要——替换为你的真实笔记。</p>
-        <div class="meta"><span class="chip">devops</span><span class="chip">deploy</span></div></div>
+      <a class="note reveal" href="https://github.com/eastwit/FaceMood" target="_blank" rel="noopener">
+        <span class="date">2026-03</span>
+        <div><h3>从表情识别到语音反馈：一条完整落地</h3><p>YOLOv8 + 表情分类 + Edge TTS 的端到端实时系统构建记录。正文待补充。</p>
+        <div class="meta"><span class="chip">computer vision</span><span class="chip">real-time</span></div></div>
         <span class="go">read →</span>
       </a>
     </div>
