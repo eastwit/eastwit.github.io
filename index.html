@@ -54,7 +54,11 @@ nav{position:fixed;top:0;left:0;right:0;z-index:50;background:rgba(10,14,19,.88)
 /* ===== hero ===== */
 .hero{min-height:92vh;display:flex;align-items:center;position:relative;overflow:hidden}
 .hero::before{content:"";position:absolute;inset:0;background:radial-gradient(55% 45% at 50% 25%,rgba(111,183,232,.08),transparent 70%)}
-.hero-in{position:relative;z-index:2;padding:120px 0 80px;max-width:860px}
+.hero-in{position:relative;z-index:2;padding:120px 0 80px;max-width:var(--maxw);display:grid;grid-template-columns:1.12fr .88fr;gap:56px;align-items:center}
+.hero-col{display:flex;flex-direction:column}
+.hero-photo{position:relative}
+.hero-photo img{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:18px;border:1px solid var(--line);box-shadow:0 30px 80px -30px rgba(0,0,0,.7)}
+.hero-photo::after{content:"";position:absolute;inset:-1px;border-radius:18px;border:1px solid rgba(111,183,232,.28);pointer-events:none}
 .kicker{font-family:var(--mono);font-size:13px;letter-spacing:.12em;color:var(--accent);margin-bottom:22px}
 .hero h1{font-family:var(--serif);font-size:clamp(38px,6.6vw,66px);font-weight:900;line-height:1.12;letter-spacing:.01em;margin-bottom:18px}
 .hero h1 .thin{font-weight:400;color:var(--muted)}
@@ -145,6 +149,8 @@ nav{position:fixed;top:0;left:0;right:0;z-index:50;background:rgba(10,14,19,.88)
 
 /* ===== responsive ===== */
 @media (max-width:860px){
+  .hero-in{grid-template-columns:1fr;gap:40px}
+  .hero-photo{max-width:360px;margin:0 auto}
   .about-grid{grid-template-columns:1fr}
   .research-grid,.eng-grid{grid-template-columns:1fr}
   .photo-grid{grid-template-columns:repeat(2,1fr)}
@@ -183,29 +189,34 @@ nav{position:fixed;top:0;left:0;right:0;z-index:50;background:rgba(10,14,19,.88)
 <header class="hero" id="top">
   <div class="wrap">
     <div class="hero-in">
-      <div class="kicker reveal">UESTC · ROBOTICS ENGINEERING</div>
-      <h1 class="reveal">贾东睿<br><span class="thin">Dongrui Jia</span></h1>
-      <p class="sub reveal"><b>机器人工程</b>本科 · 全栈开发者。在机器人与人工智能的交叉处，把算法变成能跑、能用的系统。</p>
-      <div class="hero-tags reveal">
-        <span class="tagline">robotics</span>
-        <span class="tagline">computer vision</span>
-        <span class="tagline">deep learning</span>
-        <span class="tagline">VLA</span>
+      <div class="hero-col">
+        <div class="kicker reveal">UESTC · ROBOTICS ENGINEERING</div>
+        <h1 class="reveal">贾东睿<br><span class="thin">Dongrui Jia</span></h1>
+        <p class="sub reveal"><b>机器人工程</b>本科 · 全栈开发者。在机器人与人工智能的交叉处，把算法变成能跑、能用的系统。</p>
+        <div class="hero-tags reveal">
+          <span class="tagline">robotics</span>
+          <span class="tagline">computer vision</span>
+          <span class="tagline">deep learning</span>
+          <span class="tagline">VLA</span>
+        </div>
+        <div class="cta-row reveal">
+          <a class="btn btn-primary" href="#research">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3h7v7H3zM14 3h7v7h-7zM3 14h7v7H3zM14 14h7v7h-7z"/></svg>
+            我的研究
+          </a>
+          <a class="btn btn-ghost" href="#notes">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16v16H4z"/><path d="M4 6l8 6 8-6"/></svg>
+            阅读笔记
+          </a>
+        </div>
+        <div class="meta-strip reveal">
+          <div><span class="num" id="mEdu">UESTC</span><span class="lbl">机器人工程 · 本科</span></div>
+          <div><span class="num">4+</span><span class="lbl">研究方向</span></div>
+          <div><span class="num">12+</span><span class="lbl">工程项目</span></div>
+        </div>
       </div>
-      <div class="cta-row reveal">
-        <a class="btn btn-primary" href="#research">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3h7v7H3zM14 3h7v7h-7zM3 14h7v7H3zM14 14h7v7h-7z"/></svg>
-          我的研究
-        </a>
-        <a class="btn btn-ghost" href="#notes">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16v16H4z"/><path d="M4 6l8 6 8-6"/></svg>
-          阅读笔记
-        </a>
-      </div>
-      <div class="meta-strip reveal">
-        <div><span class="num" id="mEdu">UESTC</span><span class="lbl">机器人工程 · 本科</span></div>
-        <div><span class="num">4+</span><span class="lbl">研究方向</span></div>
-        <div><span class="num">12+</span><span class="lbl">工程项目</span></div>
+      <div class="hero-photo reveal">
+        <img src="assets/portrait.jpg" alt="贾东睿" loading="lazy">
       </div>
     </div>
   </div>
